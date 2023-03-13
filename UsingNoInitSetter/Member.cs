@@ -8,8 +8,14 @@ namespace UsingNoInitSetter
 {
     public class Member
     {
-        public int Id { get; set; }
+        public Member(int memberId)
+        {
+            Id = memberId;
+        }
+        public int Id { get;}
         public string? Name { get; set; }
         public string? Address { get; set; }
+
+   
     }
 }

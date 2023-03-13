@@ -6,8 +6,10 @@ internal class Program
     {
         Console.WriteLine("Using Non-Init-Setter - Regular way!");
 
-        Member memberObj = new Member();
-        memberObj.Id = 1;
+        Member memberObj = new Member(1);
+
+       // memberObj.Id = 100; // This is not allowed because the Id is now Immutable
+
         memberObj.Name = "Abdul Salam";
         memberObj.Address = "Kerala, India";
 
@@ -19,5 +21,7 @@ internal class Program
         Console.ReadLine();
 
         Console.WriteLine("****************END - Member Details***********");
+
+     
     }
 }
